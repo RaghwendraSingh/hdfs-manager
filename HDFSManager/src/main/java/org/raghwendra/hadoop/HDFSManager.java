@@ -40,7 +40,7 @@ public class HDFSManager {
         hdfs.delete(hdfsPath, recursive);
     }
 
-    public void create(String hdfsDirToCreate, boolean override) throws IOException {
+    public void create(String hdfsDirToCreate) throws IOException {
         hdfs.mkdirs(new Path(hdfsDirToCreate));
     }
 }
