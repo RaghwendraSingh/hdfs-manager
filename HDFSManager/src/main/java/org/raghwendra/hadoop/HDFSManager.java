@@ -41,6 +41,6 @@ public class HDFSManager {
     }
 
     public void create(String hdfsDirToCreate, boolean override) throws IOException {
-        hdfs.create(new Path(hdfsDirToCreate), override);
+        hdfs.mkdirs(new Path(hdfsDirToCreate));
     }
 }
